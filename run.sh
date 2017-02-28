@@ -1,4 +1,5 @@
 #!/bin/bash
+echo WORKSPACE=$WORKSPACE
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export TESTSUITE_DIR=$CURRENT_DIR/testsuite
 if [ -d $TESTSUITE_DIR ]; then
