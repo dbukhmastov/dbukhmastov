@@ -25,3 +25,4 @@ $JAVA_HOME/bin/java -Djavatest.processCommand.inheritEnv=true -jar $TESTSUITE_DI
  -testsuite $TESTSUITE_DIR -excludeList $TESTSUITE_DIR/exclude.jtx -runtests\
  -writeReport -type html -filter allTests $TESTSUITE_DIR/ReportDir
 cd $CURRENT_DIR
+zip -qr $WORKSPACE/report.zip $TESTSUITE_DIR/ReportDir
