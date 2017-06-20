@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Synthesizer-Generator" default="all" basedir=".">
+    <description>Server tests.</description>
+    <!-- Load envrionment variables -->
+    <property environment="env"/>
+    <loadproperties srcfile="build.properties" />
+
+    <target name="all" depends="clean, compileTests"/>
+
+    <target name="compileTests" depends="init">
+        <mkdir dir="${testsuite.dir}/${classes.dir}"/>
+        <javac srcdir="${tests.dir}"
+            destdir="${testsuite.dir}/${classes.dir}"
+            classpath="${javatest.classpath}"
+            debug="on"
+            includeantruntime="false">
+	</javac>
+	<copy todir="${testsuite.dir}/${classes.dir}">
+            <fileset dir="${tests.dir}">
+                <include name="**/*.data" />
+            </fileset>
+        </copy>
+	<copy todir="${testsuite.dir}">
+            <fileset dir="../">
+                <include name="*.sh" />
+                <include name="*.bat" />
+                <include name="*.txt" />
+                <include name="*.jti" />
+                <include name="*.jtx" />
+                <include name="readme*" />
+            </fileset>
+        </copy>
+        <zip destfile="../tests.zip"
+             basedir="${testsuite.dir}"/>
+        <delete dir="${testsuite.dir}"/>
+    </target>
+
+    <target name="init">
+        <mkdir dir="${testsuite.dir}"/>
+        <mkdir dir="${testsuite.dir}/lib"/>
+        <mkdir dir="${testsuite.dir}/tests"/>
+        <copy file="testsuite.jtt" todir="${testsuite.dir}"/>
+        <copy todir="${testsuite.dir}/tests">
+            <fileset dir="${tests.dir}"/>
+        </copy>
+        <copy todir="${testsuite.dir}/lib">
+            <fileset file="${env.TEST_COMPONENTS}/lib/javatest.jar"/>
+            <fileset file="${env.TEST_COMPONENTS}/lib/mysql-connector-java-5.1.41-bin.jar"/>
+        </copy>
+    </target>
+
+    <target name="clean">
+        <delete dir="${testsuite.dir}"/>
+        <delete dir="${classes.dir}"/>
+    </target>
+
+</project>

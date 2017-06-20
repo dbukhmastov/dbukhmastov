@@ -1,0 +1,13 @@
+# Full list of tests 
+# Please use # to select tests for execution
+
+apstec/server/test/generator/system/SimpleTest.java#SimpleTest
+apstec/server/test/generator/system/DataAvalancheTest.java#DataAvalancheTest
+apstec/server/test/integrator/system/AllCommandsTest.java#AllCommandsTest
+apstec/server/test/integrator/system/DoNothingTest.java#DoNothingTest
+#apstec/server/test/integrator/system/LongRunTest.java#LongRunTest
+apstec/server/test/integrator/system/RunStopConfiguredTest.java#RunStopConfiguredTest
+apstec/server/test/integrator/system/SetClearConfigTest.java#SetClearConfigTest
+apstec/server/test/integrator/system/SetGetConfigTest.java#SetGetConfigTest
+apstec/server/test/integrator/system/ZeroSynch1Test.java#ZeroSynch1Test
+apstec/server/test/integrator/system/ZeroSynch2Test.java#ZeroSynch2Test

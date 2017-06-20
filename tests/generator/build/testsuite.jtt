@@ -1,0 +1,6 @@
+name=Synthesizer-Generator Test Suite
+id=SYNTHESIZER_GENERATOR_01
+interview=com.sun.javatest.interview.SimpleInterviewParameters
+script=com.sun.javatest.lib.StdTestScript
+finder=com.sun.javatest.finder.TagTestFinder
+classpath=classes

@@ -1,0 +1,28 @@
+#JavaTest Harness Configuration Interview
+#Mon Feb 13 13:44:02 MSK 2017
+DESCRIPTION=SYNTHESIZER_GENERATOR
+INTERVIEW=com.sun.javatest.interview.SimpleInterviewParameters
+LOCALE=en_US
+NAME=SYNTHESIZER_GENERATOR
+QUESTION=simple.epilog
+TESTSUITE=./
+WORKDIR=./workdir
+simple.classPath=./classes\n./lib/javatest.jar\n./lib/mysql-connector-java-5.1.41-bin.jar
+simple.cmdType=otherVM
+simple.concurrency.concurrency=1
+simple.desc=SYNTHESIZER_GENERATOR
+simple.excludeList.latestAutoCheck=No
+simple.excludeList.latestAutoCheckInterval=7
+simple.excludeList.latestAutoCheckMode=everyXDays
+simple.excludeList.needExcludeList=No
+simple.jvm=/home/mmwoperator/jenkins/tools/jre/bin/java
+simple.keywords.keywords.mode=expr
+simple.keywords.needKeywords=No
+simple.knownFailuresList.needKfl=No
+simple.name=SYNTHESIZER_GENERATOR
+simple.priorStatus.needStatus=No
+simple.priorStatus.status=
+simple.tests.needTests=No
+simple.tests.tests=
+simple.tests.treeOrFile=tree
+simple.timeout.timeout=2

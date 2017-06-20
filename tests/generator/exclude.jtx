@@ -1,0 +1,14 @@
+# Full list of tests 
+# Please use # to select tests for execution
+
+apstec/test/acceptance/Echo.java#Echo
+apstec/test/acceptance/ReadConfig.java#ReadConfig
+
+apstec/test/negative/WrongEcho.java#WrongEcho
+apstec/test/positive/Echo.java#Echo
+apstec/test/positive/ReadConfig.java#ReadConfig
+apstec/test/stress/AdcMem.java#AdcMem
+apstec/test/stress/LongEcho.java#LongEcho
+
+# apstec/test/system/SimpleTest.java#SimpleTest
+# apstec/test/system/DataWOStartTest.java#DataWOStartTest

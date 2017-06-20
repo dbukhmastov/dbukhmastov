@@ -1,0 +1,7 @@
+# Full list of tests 
+# Please use # to select tests for execution
+
+#apstec/integrator/test/server/SystemState.java#SystemState
+apstec/integrator/test/server/Test.java#Test
+
+

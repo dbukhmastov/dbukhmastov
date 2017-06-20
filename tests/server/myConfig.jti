@@ -1,0 +1,28 @@
+#JavaTest Harness Configuration Interview
+#Fri Mar 15 15:45:21 KST 2013
+DESCRIPTION=SYNTHESIZER_GENERATOR
+INTERVIEW=com.sun.javatest.interview.SimpleInterviewParameters
+LOCALE=en_US
+NAME=SYNTHESIZER_GENERATOR
+QUESTION=simple.classPath
+TESTSUITE=.
+WORKDIR=.\\tckWorkDir
+simple.classPath=.\\classes\n.\\lib\\javatest.jar
+simple.cmdType=otherVM
+simple.concurrency.concurrency=1
+simple.desc=SYNTHESIZER_GENERATOR
+simple.excludeList.latestAutoCheck=No
+simple.excludeList.latestAutoCheckInterval=7
+simple.excludeList.latestAutoCheckMode=everyXDays
+simple.excludeList.needExcludeList=No
+simple.jvm=.\\jdk8\\bin\\java.exe
+simple.keywords.keywords.mode=expr
+simple.keywords.needKeywords=No
+simple.knownFailuresList.needKfl=No
+simple.name=SYNTHESIZER_GENERATOR
+simple.priorStatus.needStatus=No
+simple.priorStatus.status=
+simple.tests.needTests=No
+simple.tests.tests=
+simple.tests.treeOrFile=tree
+simple.timeout.timeout=2
